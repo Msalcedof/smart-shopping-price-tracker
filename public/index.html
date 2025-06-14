@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="this is a price tracker application to track pricess of Iteams">
-    <meta name="author" content="Marco Salcedo">
-    <title>Smart Shopping price Tracker</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <script src="../js/script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="this is a price tracker application to track prices of items" />
+  <meta name="author" content="Marco Salcedo" />
+  <title>Smart Shopping Price Tracker</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js for graph -->
+  <script src="../js/script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Smart Shopping Price Tracker</h1>
-        <input type="text" id="search-bar" placeholder="search for a product">
-        <button id="search-btn">Search</button>
-    </header>
-    <section id="results"></section>
+  <header>
+    <h1>Smart Shopping Price Tracker</h1>
+    <input type="text" id="search-bar" placeholder="Search for a product" />
+    <button id="search-btn">Search</button>
+  </header>
 
+  <!-- Results Section -->
+  <section id="results"></section>
+
+  <!-- Graph Section -->
+  <section>
+    <h2>Price Trend</h2>
+    <canvas id="priceChart" width="600" height="300"></canvas>
+  </section>
+
+  <!-- Wishlist Section -->
+  <section id="wishlist">
+    <h2>Your Wishlist</h2>
+    <ul id="wishlistItems"></ul>
+  </section>
 </body>
 </html>
