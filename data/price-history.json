@@ -1,5 +1,6 @@
 [
-  { "date": "2025-06-01", "price": 29.99 },
-  { "date": "2025-06-08", "price": 27.49 },
-  { "date": "2025-06-15", "price": 25.99 }
+    { "date": "2025-06-01", "product": "Laptop", "price": 999.99 },
+    { "date": "2025-06-08", "product": "Laptop", "price": 949.49 },
+    { "date": "2025-06-15", "product": "Laptop", "price": 899.99 }
 ]
+

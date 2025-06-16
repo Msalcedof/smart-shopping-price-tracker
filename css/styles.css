@@ -16,7 +16,7 @@ body {
     cursor: pointer;
 }
 
-/*Styling for product result cards */
+/* Styling for product result cards */
 #results div {
     background-color: #fff;
     margin: 15px auto;
@@ -26,7 +26,7 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/*Wishlist styling */
+/* Wishlist styling */
 #wishlist {
     margin-top: 30px;
 }
@@ -44,8 +44,34 @@ body {
     width: 250px;
 }
 
-/* Chart spacing */
+/* 📈 Chart spacing */
 #priceChart {
     margin-top: 30px;
     max-width: 90%;
 }
+
+/*animated*/
+
+.tab-content {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.tab-content.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*Smooth Tab Switching with Animations*/
+.tab-content {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.tab-content.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
